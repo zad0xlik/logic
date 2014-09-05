@@ -3,7 +3,7 @@ DM log 'clear' log;
 *****************************************************************************************;
 *****   multiple file read-in							    *****;
 *****   xxxx.sas							            *****;
-*****   Last Modified: xx/xx/xxxx by Fedor Kolyadin                                 *****;
+*****   Last Modified: xx/xx/xxxx by zad0xli	                                    *****;
 *****************************************************************************************;
 
 *Define path for processing files;
