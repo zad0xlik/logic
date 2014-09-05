@@ -1,13 +1,13 @@
 DM log 'clear' log;
 
 *****************************************************************************************;
-*****   MetLife Entities Purchase and Sales Data - Read In                          *****;
-*****   Y09q123v2_Met_PS_Data_Read_In.sas                                           *****;
-*****   Last Modified: 10/12/2009 by Fedor Kolyadin                                 *****;
+*****   multiple file read-in								                        *****;
+*****   xxxx.sas							                                        *****;
+*****   Last Modified: xx/xx/xxxx by Fedor Kolyadin                                 *****;
 *****************************************************************************************;
 
 *Define path for processing files;
-%LET PATHNAME=H:\metropolitanlife\Separate Accounts\Purchases_Sales_Analytics\2009\Q123;
+%LET PATHNAME=X:XXXX;
 
 LIBNAME SASDATA "&PATHNAME.\SASDATA";
 
@@ -16,12 +16,12 @@ PROC DATASETS LIBRARY=SASDATA KILL NOLIST; QUIT;
 PROC DATASETS LIBRARY=WORK KILL NOLIST; QUIT;
 
 *DEFINE INPUT FILES TO CONTAIN LISTING OF FILES TO BE READ IN;
-%let vInfile = "&PATHNAME\RAWDATA\MetLife\*.txt";
+%let vInfile = "&PATHNAME\RAWDATA\XXXX\*.txt";
 
 
 **************************Read in data*********************************;
 /*CMD COMMAND TO LIST ALL FILES IN A FOLDERS*/
-filename indata pipe 'dir "H:\metropolitanlife\Separate Accounts\Purchases_Sales_Analytics\2009\Q123\RAWDATA\ALL\*.txt" /b';
+filename indata pipe 'dir "X:XXXX\*.txt" /b';
 
 data file_list;
 /*	INFILE STATEMENT FOR FILE NAMES*/

@@ -4,7 +4,7 @@ DM LOG 'CLEAR' LOG;
 *----------------------------------------------------------------------------------------------;
 *	DATA PROCESSING FOLDER PATH																   ;
 *----------------------------------------------------------------------------------------------;
-%LET PATHNAME=H:\metropolitanlife\FEDOR\Comverse\Comverse_Restatement FY08\PROFILING;
+%LET PATHNAME=X:XXXX;
 		LIBNAME SASDATA "&PATHNAME.\SASDATA";
 
 DATA _NULL_;
@@ -19,93 +19,7 @@ DATA VariableList;
 	INPUT Variable $ PatternCheck $ DateCheck $ Shortname $;
 	DATALINES;
 
-		AutoNumber					Y   N       AutoNumber
-		Project						Y   N       Project
-		CustomerPO					Y	N		CustomerPO
-		Order						Y	N		Order
-		Product						Y	N		Product
-		DIVISION_GROUP				Y	N		DIVISION_GROUP
-		DIVISION					Y	N		DIVISION
-		REGION						Y	N		REGION
-		Project_OG					Y	N		Project_OG
-		SubProject					Y	N		SubProject
-		SubProject_OG				Y	N		SubProject_OG
-		Customer					Y	N		Customer
-		Customer_OG					Y	N		Customer_OG
-		CustomerPO_OG				Y	N		CustomerPO_OG
-		Channel						Y	N		Channel
-		Country						Y	N		Country
-		Class						Y	N		Class
-		ProdGroup					Y	N		ProdGroup
-		LineBusiness				Y	N		LineBusiness
-		BusinessUnits				Y	N		BusinessUnits
-		ProdPlace					Y	N		ProdPlace
-		Company						Y	N		Company
-		InterCompany_Order			Y	N		IntrCmp_Order
-		SoNum						Y	N		SoNum
-		CIR							Y	N		CIR
-		OpportunityNo				Y	N		OpportunityNo
-		Delivery_terms				Y	N		Delivery_terms
-		FOB_point					Y	N		FOB_point
-		Schedule_Date				Y	Y	    Schedule_Date
-		Trigger_date				Y	Y	    Trigger_date
-		Risk						Y	N		Risk
-		Sale_Type					Y	N		Sale_Type
-		ExpectedDate				Y	Y	    ExpectedDate
-		QuarterExpected				Y	N		QuarterExpected
-		Certain						Y	N		Certain
-		Currency					Y	N		Currency
-		CurrencyAmount				Y	N		CurrencyAmount
-		DollarAmount				Y	N		DollarAmount
-		Invoice						Y	N		Invoice
-		Invoice_Date				Y	Y	    Invoice_Date
-		Invoice_Quarter				Y	N		Invoice_Quarter
-		Invoice_Amount_Dollar		Y	N		Inv_Amt_Dlr
-		Invoice_Amount_Currency		Y	N		Inv_Amt_Cur
-		ExternalInvoice				Y	N		ExtInvoice
-		ShipDate					Y	N		ShipDate
-		QuarterShip					Y	N		QuarterShip
-		Maintenance					Y	N		Maintenance
-		DeferralNum					Y	N		DeferralNum
-		ExpInstallDate				Y	Y	    ExpInstallDate
-		ActualInstallDate			Y	Y	    ActInstallDate
-		ExpWarrDate					Y	N		ExpWarrDate
-		ActualWarrlDate				Y	Y	    ActualWarrlDate
-		WarrType					Y	N		WarrType
-		WarrPeriod					Y	N		WarrPeriod
-		Follow_Up					Y	N		Follow_Up
-		Project_Manager				Y	N		Project_Manager
-		Production_Flag				Y	N		Production_Flag
-		LineType					Y	N		LineType
-		NewSale						Y	N		NewSale
-		NewBusiness					Y	N		NewBusiness
-		NewSys						Y	N		NewSys
-		Port						Y	N		Port
-		MBox						Y	N		MBox
-		BHSM						Y	N		BHSM
-		Competitor					Y	N		Competitor
-		OrderStatus					Y	N		OrderStatus
-		RevenueStatus				Y	N		RevenueStatus
-		Revenue_Reversal			Y	N		Revn_Rev
-		ACCOUNT_MANAGER				Y	N		ACCOUNT_MANAGER
-		Order_Line_Description		Y	N		Ordr_Ln_Desc
-		BudgetCode					Y	N		BudgetCode
-		Reason						Y	N		Reason
-		Note						Y	N		Note
-		Booking_Amount				Y	N		Booking_Amount
-		Booking_Date				Y	Y	    Booking_Date
-		Booking_Quarter				Y	N		Booking_Quarter
-		PlanetInstalExpectedDate	Y	Y	    PlntInstExpDt
-		PlanetInstalActualDate		Y	Y	    PlntInstActDt
-		PlanetWarrantyExpectedDate	Y	Y	    PlntWntyExpDt
-		PlanetWarrantyActualDate	Y	Y	    PlntWntyActDt
-		Cogs_Tpec					Y	N		Cogs_Tpec
-		PRC_Margin					Y	N		PRC_Margin
-		SST_Line_No					Y	N		SST_Line_No
-		DB_Dump_File				Y	N		DB_Dump_File
-		Pipeline_Excess_Records		Y	N		Pipexc_Rec
-		Superseded_Records			Y	N		Sprsd_Rec
-		Q1_2008_No_Ship_Date		Y	N		Q108NoShpDt
+		field_name					Y   N       short_name
 
 RUN;
 
