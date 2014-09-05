@@ -58,14 +58,14 @@ run;
 	          Class_nme                  :                $105.
 	          Trust_ID                   :                $10.
 	          Trust_nme                  :                $105.
-	          Net_Asset_Val              :                
-	          Pur_Dollar_Amt             :
-	          Pur_Share_Amt              :
-	          Sale_Dollar_Amt            :
-	          Sale_Share_Amt             :
-	          Div_Share_Amt              :
-	          Div_Dollar_Amt             :                
-			  VI_ID 					 :				  $10.;
+	          Net_Asset_Val              :			8.                
+	          Pur_Dollar_Amt             :			8.
+	          Pur_Share_Amt              :			8.
+	          Sale_Dollar_Amt            :			8.
+	          Sale_Share_Amt             :			8.
+	          Div_Share_Amt              :			8.
+	          Div_Dollar_Amt             :                	8.
+		  VI_I		 	     :                $10.;
 
 		format Eff_dt yymmdd10.;
 
