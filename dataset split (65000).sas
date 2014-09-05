@@ -1,6 +1,6 @@
 
 /*SPLIT THE OUTPUT PROGRAM INTO MULTIPLE PARTS TO FIT INTO EXCEL 2000*/
-/*EXPORT THE FUND EXPANSION DETAILS BASED ON THE AUDIT TEAM'S REQUEST*/
+/*EXPORT THE FUND EXPANSION DETAILS BASED ON THE REQUEST	     */
 
 ***************************************************************************************;
 %macro split_ds(in_ds, tbl, out_file);
